@@ -1,12 +1,16 @@
 var express = require('express');
 var router = express.Router();
-let modelServico = require("../model/servico.json")
+const petsController = require("../controller/petsController")
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res, ) {
   res.render('index', { title: 'Aula 03/02' });
 });
-router.get('/servico', function(req, res, next) {
-  res.send(modelServico);
-});
+// errado
+// router.get('/servico', function(req, res ) {
+//   res.send(modelServico);
+// });
+// correto
+router.get('/servico',petsController.listaServicos );
+
 module.exports = router;
