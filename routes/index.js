@@ -12,5 +12,6 @@ router.get('/', function(req, res, ) {
 // });
 // correto
 router.get('/servico',petsController.listaServicos );
+router.get('/pets',petsController.listaPets)
 
 module.exports = router;
