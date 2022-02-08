@@ -4,7 +4,7 @@ const petsController = require("../controller/petsController")
 
 /* GET home page. */
 router.get('/', function(req, res, ) {
-  res.render('index', { title: 'Aula 03/02' });
+  res.render('index', { title: 'Aula 04/02' });
 });
 // errado
 // router.get('/servico', function(req, res ) {
