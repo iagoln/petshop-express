@@ -1,6 +1,12 @@
+[{
+  "nome": "banho", "preco": "R$ 40,00", "descricao": "Banho no pet"
+},
 {
-    "banho": "R$ 40,00",
-    "tosa": "R$ 30,00",
-    "hidratacao": "R$ 50,00",
-    "aplicacaoVacina": "R$ 80,00"
-  }
+  "nome":"tosa", "preco":"R$ 30,00", "descricao": "Tosar pelo do pet"
+},
+{
+  "nome":"hidratacao", "preco":" R$ 50,00", "descricao": "hidratar pelo"
+},
+{
+  "nome":"aplicacaoVacina",  "preco": "R$ 80,00", "descricao": "Vacinar o pet"
+}]
