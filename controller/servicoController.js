@@ -1,4 +1,3 @@
-const { redirect } = require("express/lib/response");
 let modelServico = require("../model/servico.json")
 
 const servicoController = {
@@ -6,8 +5,8 @@ const servicoController = {
         res.send(modelServico);
     },
     criarServico:(req,res)=>{
-        console.log(req.body)
-
+        let servico =req.body
+        modelServico.push(servico)
         res.redirect('/')
     },
        
