@@ -9,4 +9,7 @@
 },
 {
   "nome":"aplicacaoVacina",  "preco": "R$ 80,00", "descricao": "Vacinar o pet"
+},
+{
+  "nome":"teste",  "preco": "R$ 800,00", "descricao": "teste"
 }]

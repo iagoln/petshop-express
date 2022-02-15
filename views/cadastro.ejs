@@ -25,7 +25,16 @@
         </div>
     </header>
     <main>
-        <!-- aqui vem o cadastro -->
+   
+        <form class="form-cadastro" action="/cadastroservico" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" />
+                <label for="preco">Preço</label>
+                <input type="text"  name="preco" />
+                <label for="descricao">Descrição:</label>
+                <textarea id="msg" name="descricao"></textarea>
+                <button type="submit">enviar</button>
+        </form>
     </main>
     <footer>
         <div class="container">

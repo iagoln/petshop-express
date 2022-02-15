@@ -24,5 +24,8 @@ router.get('/cadastro',usuarioController.cadastro )
 router.get('/login',usuarioController.login )
 router.get('/contato',usuarioController.contato )
 router.get('/',indexController.index)
+router.get('/cadastroservico',servicoController.exibeServico)
+
+router.post('/cadastroservico',servicoController.criarServico)
 
 module.exports = router;
