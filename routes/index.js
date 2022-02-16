@@ -25,7 +25,12 @@ router.get('/login',usuarioController.login )
 router.get('/contato',usuarioController.contato )
 router.get('/',indexController.index)
 router.get('/cadastroservico',servicoController.exibeServico)
-
+//----------servico
+router.get('/cadastroget',servicoController.criarServicoGet)
 router.post('/cadastroservico',servicoController.criarServico)
+
+//----------pets
+router.get('/cadastrapet',petsController.exibePet)
+router.post('/cadastrapet', petsController.cadastraPets)
 
 module.exports = router;
