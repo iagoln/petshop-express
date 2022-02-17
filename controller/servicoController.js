@@ -1,6 +1,9 @@
 let modelServico = require("../model/servico.json")
 
 const servicoController = {
+    index:(req,res)=>{
+        res.render('cadastro')
+    },
     listaServicos:(req,res)=>{
         res.send(modelServico);
     },
@@ -14,11 +17,8 @@ const servicoController = {
       let servico = req.query
       modelServico.push(servico)
       res.redirect('/')
-    },
-       
-    exibeServico:(req,res)=>{
-        res.render('cadastro')
-    }
+    },     
+
 }
 
 module.exports = servicoController
