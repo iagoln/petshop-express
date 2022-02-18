@@ -7,7 +7,7 @@ const usuarioController = {
         res.render('login') 
     },
     contato:(req , res)=>{
-    res.render('usuario/sobre')
+     res.render('contato')
     }
 }
 module.exports= usuarioController
