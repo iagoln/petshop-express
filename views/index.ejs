@@ -26,8 +26,9 @@
                     <%  for (let servico of listaServicos ) {                    
                         if(servico ){
                             %>
-                    <article>
-                        <div class="thumb"></div>
+                    <article >
+                        <div class="thumb"><img src= <%servico.img %> alt=""></div>
+                        
                         <h3> <%=servico.nome %></h3>
                         <h4> <%=servico.preco %></h4>
                     </article>

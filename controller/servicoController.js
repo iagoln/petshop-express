@@ -17,7 +17,12 @@ const servicoController = {
       let servico = req.query
       modelServico.push(servico)
       res.redirect('/')
-    },     
+    }, 
+    testeparams:(req,res)=>{
+    const servicoId= req.params.id
+    const servico = modelServico.find(s => {return s.id == servicoId})
+    res.send(servico)
+    }    
 
 }
 
