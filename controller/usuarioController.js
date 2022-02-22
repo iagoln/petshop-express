@@ -8,6 +8,9 @@ const usuarioController = {
     },
     contato:(req , res)=>{
      res.render('contato')
-    }
+    },
+    sobre:(req , res)=>{
+        res.render('usuario/sobre')
+       }
 }
 module.exports= usuarioController

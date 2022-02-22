@@ -2,7 +2,7 @@ let modelServico = require("../model/servico.json")
 
 const servicoController = {
     index:(req,res)=>{
-        res.render('cadastro')
+        res.render('servicos')
     },
     listaServicos:(req,res)=>{
         res.send(modelServico);
