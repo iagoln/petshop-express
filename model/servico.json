@@ -1,6 +1,6 @@
 [
 {
-    "id":1, "nome": "banho", "preco": "R$ 40,00", "descricao": "Banho no pet"
+    "id":1, "nome": "banho", "preco": "R$ 40,00", "descricao": "Banho no pet", "img": "../public/img/banho.jpg"
 },
 {
   "id":2,"nome":"tosa", "preco":"R$ 30,00", "descricao": "Tosar pelo do pet"
