@@ -2,7 +2,7 @@ let modelServico = require("../model/servico.json")
 
 const servicoController = {
     index:(req,res)=>{
-        res.render('servicos')
+        res.render('servicos', {listaServicos : modelServico})
     },
     listaServicos:(req,res)=>{
         res.send(modelServico);
@@ -21,7 +21,8 @@ const servicoController = {
     testeparams:(req,res)=>{
     const servicoId= req.params.id
     const servico = modelServico.find(s => {return s.id == servicoId})
-    res.send(servico)
+    
+    res.render('servicoId',{servicoId:servico, titulo:"Servico"})
     }    
 
 }

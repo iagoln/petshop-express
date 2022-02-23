@@ -14,20 +14,17 @@
     <main>
         <section class="servicos-lista">
             <div class="container">
-                <h1>Serviços</h1>
+                <h1><%=titulo%></h1>
                 
-            <% for (let servico of listaServicos  ) {  %>
                 <article>
-                    <div class="thumb"> <img src=<%= servico.img%> alt=""></div>
+                    <div class="thumb"> <img src=<%= servicoId.img%> alt=""></div>
                     <div class="info">
-                        <h2><%=servico.nome %></h2>
-                        <p>R$ <%=servico.preco %></p>
-                        <p><%=servico.descricao %></p>
-                        <a href="/servico/servicoid/<%= servico.id%>" class="btn btn-primary">agendar</a>
+                        <h2><%=servicoId.nome %></h2>
+                        <p>R$ <%=servicoId.preco %></p>
+                        <p><%=servicoId.descricao %></p>
+                        <a href="/servico/servicoid/<%= servicoId.id%>" class="btn btn-primary">agendar</a>
                     </div>
-                </article>
-               <% }%>
-
+                </article>           
             </div>
         </section>
     </main>
