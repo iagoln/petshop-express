@@ -21,10 +21,11 @@ const servicoController = {
     testeparams:(req,res)=>{
     const servicoId= req.params.id
     const servico = modelServico.find(s => {return s.id == servicoId})
-    
     res.render('servicoId',{servicoId:servico, titulo:"Servico"})
-    }    
-
+    } ,
+    cadastroServico:(req,res)=>{
+        res.render("cadastro")
+    }   
 }
 
 module.exports = servicoController

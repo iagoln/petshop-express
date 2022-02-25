@@ -13,11 +13,13 @@
     <%- include('./partials/header.ejs') %>
     <main>
    
-        <form class="form-cadastro" action="/servico/cadastroservico" method="POST">
+        <form class="form-cadastro" action="/servico/cadastroservico" method="POST" >
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" />
                 <label for="preco">Preço</label>
-                <input type="text"  name="preco" />
+                <input type="text"  name="preco" />         
+                <label for="foto">Foto do serviço:</label>
+                <input type="file" name="foto" id="file" >
                 <label for="descricao">Descrição:</label>
                 <textarea id="msg" name="descricao"></textarea>
                 <button type="submit">enviar</button>
