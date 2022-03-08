@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const bancoUser=[]
+const bancoUser= require('../model/users.json')
+const fs = require('fs')
 
 const usuarioController = {
     cadastro:(req,res)=>{
@@ -9,8 +10,10 @@ const usuarioController = {
     cadastroUsuario:(req,res)=>{
         const {nome,email,senha} = req.body
         const hash = bcrypt.hashSync(senha, saltRounds);
-        const user = {id:Date.now() , nome:nome,senha:hash,email:email}
+        const user = {id:Date.now() , nome:nome,senha:hash, email:email}
         bancoUser.push(user)
+
+        fs.writeFileSync("./model/users.json", JSON.stringify(bancoUser),null,4)
         res.send(bancoUser)
      },
     login:(req,res)=>{

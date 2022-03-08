@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1646779322283,
+        "nome": "Iago2",
+        "senha": "$2b$10$Bx7zphA0L8uR9Ev7amvvr.WDGv6Svc/YLUpKUALNUsHjvRRCiCNgO",
+        "email": "iago2@dg.com"
+    },
+    {
+        "id": 1646779330451,
+        "nome": "Iago",
+        "senha": "$2b$10$k8W7c.EkG1i.6rJ1S84.keqZevUvoIjcJ5ffVsb/.rRvP7V.fTXj.",
+        "email": "iago1@dg.com"
+    }
+]
