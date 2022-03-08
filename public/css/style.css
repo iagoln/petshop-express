@@ -273,8 +273,14 @@ section.contato a:any-link,
 section.contato p {
     color: #575757;
 }
-.form-cadastro {
+.form {
     display: flex;
     flex-direction: column;
+    width: 50%;
    
+}
+.formUser{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
 }

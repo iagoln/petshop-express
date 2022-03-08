@@ -11,18 +11,35 @@
 
 <body>
     <%- include('./partials/header.ejs') %>
-    <main>
-      <form action="/users/cadastro" method="POST">
-          <label for="nome">Nome:</label>
-          <input type="text" name="nome" id="nome">
-          <label for="email">Email:</label> 
-          <input type="email" name="email">
-          <label for="senha">Senha:</label>
-          <input type="text" name="senha">
-          <button type="submit">Cadastro</button>  
-      </form>
-    </main>
-    <%- include('./partials/footer.ejs') %>
+        <main>
+            <section class="formUser">
+                <div>
+                    <h1>Cadastro</h1>
+                    <form class="form" action="/users/cadastro" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                        <label for="senha">Senha:</label>
+                        <input type="text" name="senha">
+                        <button type="submit">Cadastro</button>
+                    </form>
+                </div>
+                <div>
+                    <h1>Login</h1>
+                    <form class="form" action="/users/login" method="POST">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                        <label for="senha">Senha:</label>
+                        <input type="text" name="senha">
+                        <button type="submit">Logar</button>
+                    </form>
+
+                </div>
+
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>
