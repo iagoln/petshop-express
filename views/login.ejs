@@ -12,7 +12,15 @@
 <body>
     <%- include('./partials/header.ejs') %>
     <main>
-        <!-- aqui vem o login -->
+      <form action="/users/cadastro" method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome">
+          <label for="email">Email:</label> 
+          <input type="email" name="email">
+          <label for="senha">Senha:</label>
+          <input type="text" name="senha">
+          <button type="submit">Cadastro</button>  
+      </form>
     </main>
     <%- include('./partials/footer.ejs') %>
 </body>
