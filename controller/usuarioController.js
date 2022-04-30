@@ -33,19 +33,15 @@ const usuarioController = {
             // }
             const resultadoSenha = bcrypt.compareSync(senha, user.senha)
             if (user.email == email && resultadoSenha == true ) {
-                res.cookie('user',user.email )
-                req.session.user = "sasas"
-                req.session.save();
-            
-            
-            
+               // res.cookie('user',user.email )
+                req.session.user = user.email   
                 return res.send("usuario logado")
             }
         }
         return res.send("usario ou senha incorreto")
         },
         sobre: (req, res) => {
-            res.render('usuario/sobre')
+         return   res.render('usuario/sobre')
         }
     }
 module.exports = usuarioController

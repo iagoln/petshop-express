@@ -1,5 +1,6 @@
 const validaUsuarioLogado = (req, res, next) => {
-    const usuario = req.cookies.user
+    const usuario = req.session.user 
+    console.log("Email"+ usuario)
     if(usuario){
         next()
     }else{
